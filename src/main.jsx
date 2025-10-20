@@ -7,9 +7,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Home_page/>
     <Record RecordName={"Formations"}/>
-    <Record RecordName={"Projets"}/>
-    <Record RecordName={"Expériences"}/>
-    <Record RecordName={"Compétences"}/>
+    <Record RecordName={"Projects"}/>
+    <Record RecordName={"Experiences"}/>
+    <Record RecordName={"Skills"}/>
     <Record RecordName={"Interest"}/>
   </StrictMode>,
 )

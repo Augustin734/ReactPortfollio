@@ -1,0 +1,8 @@
+Etape 1:
+docker build -t react .
+
+Etape 2:
+docker run -p 3000:80 react
+
+Etape 3:
+http://localhost:3000

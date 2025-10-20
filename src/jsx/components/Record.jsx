@@ -4,7 +4,6 @@ function Record (props) {
     return (
         <button onClick={GoToPage}>{props.RecordName}</button>
     )
-
 }
 
 export default Record
