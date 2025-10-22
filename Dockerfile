@@ -1,14 +1,20 @@
-# Stage 1 : build de l'app React avec Vite
-FROM node:18 AS build
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-RUN npm run build
+# Utiliser Node 22
+FROM node:22
 
-# Stage 2 : serveur Nginx
-FROM nginx:alpine
-# Vite génère le dossier 'dist', pas 'build'
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Définir le répertoire de travail
+WORKDIR /app
+
+# Copier les fichiers de dépendances
+COPY package*.json ./
+
+# Installer les dépendances
+RUN npm install
+
+# Copier le reste du code (utile si docker-compose ne monte pas de volume)
+COPY . .
+
+# Exposer le port du serveur React
+EXPOSE 3000
+
+# Lancer le serveur de développement Vite
+CMD ["npm", "run", "dev", "--", "--host"]

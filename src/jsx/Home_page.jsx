@@ -1,21 +1,30 @@
+import React from 'react';
+import Record from './components/Record.jsx';
+import '../css/main.css';
+import photocv from '../images/photocv.JPG';
+
 function Home_page() {
   return (
     <div>
-      <div>
-        <h1>
-          Augustin Viemont
-        </h1>
-        <p>Curriculum Vitae</p>
+      <div className="bloc">
+        <video autoplay="autoplay" muted loop src="platine.MOV"/>
+        <div className="titre">
+          <h1>
+            Augustin Viemont<br/><br/>
+            Curriculum Vitae
+          </h1>
 
-        <img src="/photocv.JPG" alt="Photo CV"/>
-
-        <button onClick={() => window.location.href = 'b2o.html'}>
-          B2O ??
-        </button>
+          <div className="photo">
+            <img className="image" src={photocv} alt="Photo CV"/> 
+            <div className="middle">
+              <input className="button" type="button" value="B2O ??"/>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <h2>Profil</h2>
+      <h1>Profil</h1>
+      <div className="texte">
         <p>
           Motivé, curieux et travailleur, je suis toujours à la recherche d'un
           nouveau challenge professionnel. Actuellement dans le programme PreMsc
@@ -24,6 +33,15 @@ function Home_page() {
           acquises en cours et de les développer.
         </p>
       </div>
+
+      <div className="RecordSection">
+        <Record RecordName="Formations" onClickPath="/formations" />
+        <Record RecordName="Projects" onClickPath="/projects" />
+        <Record RecordName="Experiences" onClickPath="/experiences" />
+        <Record RecordName="Skills" onClickPath="/skills" />
+        <Record RecordName="Interest" onClickPath="/interest"/>
+      </div>
+
     </div>
   );
 }
