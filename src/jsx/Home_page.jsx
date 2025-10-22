@@ -1,5 +1,6 @@
 import React from 'react';
 import Record from './components/Record.jsx';
+import Footer from './components/Footer.jsx';
 import '../css/main.css';
 import photocv from '../images/photocv.JPG';
 
@@ -7,7 +8,6 @@ function Home_page() {
   return (
     <div>
       <div className="bloc">
-        <video autoplay="autoplay" muted loop src="platine.MOV"/>
         <div className="titre">
           <h1>
             Augustin Viemont<br/><br/>
@@ -34,14 +34,15 @@ function Home_page() {
         </p>
       </div>
 
+      <h1>Cliquez sur un vinyl pour en savoir plus !</h1>
       <div className="RecordSection">
         <Record RecordName="Formations" onClickPath="/formations" />
         <Record RecordName="Projects" onClickPath="/projects" />
         <Record RecordName="Experiences" onClickPath="/experiences" />
         <Record RecordName="Skills" onClickPath="/skills" />
-        <Record RecordName="Interest" onClickPath="/interest"/>
+        <Record RecordName="Interest" onClickPath="/interest" /> 
       </div>
-
+      <Footer></Footer>
     </div>
   );
 }
