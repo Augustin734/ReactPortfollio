@@ -10,7 +10,6 @@ body {
         margin: 8px;
     }
 }
-
 .root {
     width: 100vh;
 }
@@ -38,7 +37,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
 .bloc .banniere {
     position: absolute;
     top: 30%;
@@ -154,20 +152,37 @@ h1 {
 }
 .coordonnees {
     text-align: center;
+    flex: 1;
 }
 form {
     text-align: center;
+    flex: 1;
 }
 @media (max-width: 768px){
-    .footer {
-        flex-direction: column;
-        gap: 50px;
-    }
+  .footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .coordonnees {
+    text-align: center;
+    flex: 1;
+  }
+  form {
+    text-align: center;
+    flex: 1;
+  }
 }
 
 
 /* RecordSection */
 .RecordSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+/* Content */
+.content {
   position: relative;
   z-index: 2;
   display: flex;
@@ -178,9 +193,9 @@ form {
   width: 100%;
   padding: 30px 2% 220px 2%; 
   box-sizing: border-box;
+  flex-direction: column;
 }
-
-.RecordSection::after {
+.content::after {
   content: "";
   position: absolute;
   left: 0;
@@ -224,7 +239,6 @@ form {
   border-radius: 50%;
   border: none;
   background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000 60%, #111 100%);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   color: white;
   cursor: pointer;
   text-transform: uppercase;
@@ -253,7 +267,6 @@ form {
 }
 .record:hover {
   transform: rotate(360deg);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
 }
 .record.home-page::before {
     background-color: grey;
@@ -287,4 +300,44 @@ form {
     width: 35px;
     height: 35px;
   }
+}
+
+
+.HardSkills {
+    display: flex;
+    text-align: center;
+    flex: 1;
+    flex-wrap: wrap;
+    color: antiquewhite;
+    border-radius: 50px;
+    padding: 50px;
+    font-size: 20px;
+    width: auto;
+    justify-content: space-around;
+}
+
+.Skills {
+    text-align: center;
+    align-content: center;
+    flex: 1;
+    margin: 50px 10% 50px 10%;
+    background-color: #1e293b;
+    color: antiquewhite;
+    border-radius: 50px;
+    padding: 50px;
+    font-size: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  max-width: 70px;
+  max-height: 70px;
+  text-align: center;
+  align-content: center;
+}
+
+.SkillsLogo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
