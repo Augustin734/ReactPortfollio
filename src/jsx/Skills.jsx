@@ -9,11 +9,6 @@ import js from '../images/JS.JPG'
 function Skills() {
   return (
   <div>
-    <div className="bloc">
-      <div className='titre'>
-      <h1>Skills</h1>
-      </div>
-    </div>
     <div className="RecordSection">
       <Record RecordName="Home-Page" onClickPath="/" />
       <Record RecordName="Formations" onClickPath="/formations" />
@@ -21,6 +16,11 @@ function Skills() {
       <Record RecordName="Experiences" onClickPath="/experiences" />
       <Record RecordName="Interest" onClickPath="/interest" /> 
     </div>
+
+    <div className='titrePage'>
+      <h1>Skills</h1>
+    </div>
+    
     <h1>Hard Skills :</h1>
     <div className="HardSkills">
       <div className="Skills">

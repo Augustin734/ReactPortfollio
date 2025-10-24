@@ -5,13 +5,6 @@ import experience from '../images/experience.JPG'
 function Formations () {
     return (
         <div>
-            <div className="bloc">
-                <img className="banniere" src={experience} alt="Photo CV"/>
-                <div className='titre'>
-                    <h1>Formation</h1>
-                </div>
-            </div>
-
             <div className="RecordSection">
                 <Record RecordName="Home-Page" onClickPath="/" />
                 <Record RecordName="Projects" onClickPath="/projects" />
@@ -19,6 +12,11 @@ function Formations () {
                 <Record RecordName="Skills" onClickPath="/skills" />
                 <Record RecordName="Interest" onClickPath="/interest" /> 
             </div>
+
+            <div className='titrePage'>
+                <h1>Formation</h1>
+            </div>
+
             <div className="content">
                 <div className="texte1">
                     <h3>Master of Science : Informatique, 09/2025 - En cours</h3>

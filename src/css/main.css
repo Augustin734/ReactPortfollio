@@ -30,12 +30,19 @@ body {
     }
 }
 
+/* Pour les titres des pages */
+.titrePage {
+  color: #000;
+  font-size: 200%;
+  margin: 10% 5% 5% 5%;
+}
 
 /* Pour la vidéo */
 .bloc {
     height: 50vh;
     position: relative;
     overflow: hidden;
+    padding: 0px 0px 100px 0px;
 }
 .bloc .banniere {
     position: absolute;
@@ -68,7 +75,7 @@ body {
 .photo {
   position: relative;
   margin: 20px;
-  width: 25%;
+  width: 18%;
 }
 @media (max-width: 768px) {
     .photo {
@@ -112,9 +119,8 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex: 1;
     padding: 0px 10% 50px 10%;
-    font-size: 20px;
+    font-size: 150%;
 }
 @media (max-width: 768px) {
     .sectionpic {
@@ -133,8 +139,13 @@ h1 {
     color: antiquewhite;
     border-radius: 50px;
     padding: 50px;
-    font-size: 20px;
+    font-size: 150%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .texte1 {
+    font-size: 100%;
+  }
 }
 
 /* Pour le Footer */
@@ -144,10 +155,9 @@ h1 {
   width: 100%;
   background-color: #1e293b;
   color: white;
-  padding: 40px 2%;
+  padding: 2%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   box-sizing: border-box;
 }
 .coordonnees {
@@ -160,8 +170,7 @@ form {
 }
 @media (max-width: 768px){
   .footer {
-    flex-direction: column;
-    gap: 50px;
+    justify-content: space-around;
   }
   .coordonnees {
     text-align: center;
