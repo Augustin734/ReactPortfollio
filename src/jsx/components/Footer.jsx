@@ -1,17 +1,23 @@
 function Footer() {
   return (
     <footer className="footer">
-      <address className="coordonnees">
+      <div className="coordonnees">
         <p><strong>Fait par :</strong></p>
         <p>Augustin Viemont</p>
-        <br />
+        <br/>
 
         <p><strong>Numéro de téléphone :</strong></p>
         <p>06 52 75 87 53</p>
-        <br />
+        <br/>
 
+        <p><strong>Adresse Mail :</strong></p>
+        <p>augustin.viemont1@outlook.fr</p>
+        <br/>
+
+
+        <p><strong>Adresse Postale :</strong></p>
         <p>Je vis actuellement au 29 Rue de Rome 13002</p>
-        <br />
+        <br/>
 
         <a
           href="https://www.linkedin.com/in/augustin-viemont-6a1628226/"
@@ -20,14 +26,15 @@ function Footer() {
         >
           Voici mon LinkedIn pour plus de détails
         </a>
-        <br />
+        <br/>
+        <br/>
 
         <a href="/CV.pdf" download="VIEMONT_Augustin_CV.pdf">
           Vous pouvez même télécharger mon CV !!
         </a>
         <br />
 
-      </address>
+      </div>
 
       <form action="/ma-page-de-traitement" method="post">
         <h1 style={{ fontSize: "150%" }}>Contactez-moi</h1>

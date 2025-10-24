@@ -5,7 +5,7 @@ function Projects() {
         <h1>Projets</h1>
       </div>
 
-      <div className="HardSkills">
+      <div>
         <div className="texte1">
           <h3>Jeu du Pendu</h3>
           <p><strong>Langage utilisé :</strong> Python</p>

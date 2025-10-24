@@ -2,14 +2,14 @@ import lego from '../images/LEGO.JPG';
 import gh from '../images/ghlogo.JPG';
 import pokawa from '../images/Pokawa.JPG';
 
-function Experiences() {
+function petitContainers() {
   return (
     <div>
       <div className='titreSections'>
         <h1>Expérience</h1>
       </div>
-      <div className="HardSkills">
-        <div className="texte1">
+      <div className="petitContainer">
+        <div className="textePetitContainer">
           <h3>Vendeur</h3>
           <img className="logoLego" src={lego}/>
           <p>Lego - Marseille - CDI - 09/2024 - 09/2025</p>
@@ -17,15 +17,15 @@ function Experiences() {
           <p>Proposer une expérience client pérsonalisé/luxe tout au long des achats</p>
           
         </div>
-        <div className="texte1">
+        <div className="textePetitContainer">
           <h3>Runner</h3>
           <img className="logoGH" src={gh}/>
           <p>Les Grandes Halles Du Vieux Port - Marseille - CDI - 02/2024 - 05/2024</p>
           <p>Accueil des clients pendant les services du midi et du soir</p>
-          <p>Gestion du stress et validation des taches quotidiennes malgré l'affluence.</p>
+          <p>Gestion du stress et validation des taches quotidiennes malgré l'affluence</p>
           
         </div>
-        <div className="texte1">
+        <div className="textePetitContainer">
           <h3>Equipier Polyvalent puis Responsable d'équipe</h3>
           <img className="logoPokawa" src={pokawa}/>
           <p>Pokawa - Paris - CDI - 09/2021 - 02/2024</p>
@@ -39,4 +39,4 @@ function Experiences() {
   );
 }
 
-export default Experiences;
+export default petitContainers;

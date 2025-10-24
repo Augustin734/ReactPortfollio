@@ -11,6 +11,7 @@ import Formations from './jsx/Formations.jsx';
 import Projects from './jsx/Projects.jsx';
 import Experiences from './jsx/Experiences.jsx';
 import Skills from './jsx/Skills.jsx';
+import Interest from './jsx/Interest.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
       <Record RecordName="projets" onClickPath="#projects" />
       <Record RecordName="experiences" onClickPath="#experiences" />
       <Record RecordName="skills" onClickPath="#skills" />
+      <Record RecordName="Centres d'intérêt" onClickPath="#interest"/>
     </div>
 
     <section id="formations">
@@ -36,6 +38,10 @@ createRoot(document.getElementById('root')).render(
 
     <section id="skills">
       <Skills />
+    </section>
+
+    <section id="interest">
+      <Interest/>
     </section>
     <ScrollToTopButton/>
     <Footer />
