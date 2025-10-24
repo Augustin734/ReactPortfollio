@@ -50,6 +50,12 @@ function Skills() {
         <div className="Skills">
           <p>Gestion du stress</p>
         </div>
+        <div className="Skills">
+          <p>Gestion client</p>
+        </div>
+        <div className="Skills">
+          <p>Vente</p>
+        </div>
       </div>
     <div className='fade'/>
     <div/>

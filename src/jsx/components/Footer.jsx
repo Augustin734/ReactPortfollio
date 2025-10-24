@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <footer className="footer">
@@ -24,7 +22,7 @@ function Footer() {
         </a>
         <br />
 
-        <a href="CV.pdf" download="CV.pdf">
+        <a href="/CV.pdf" download="VIEMONT_Augustin_CV.pdf">
           Vous pouvez même télécharger mon CV !!
         </a>
         <br />
