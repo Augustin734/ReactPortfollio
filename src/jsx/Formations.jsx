@@ -1,3 +1,5 @@
+import epitech from '../images/epitech.JPG';
+
 function Formations () {
     return (
         <div>
@@ -6,7 +8,12 @@ function Formations () {
             </div>
             <div className="texte1">
                 <h3>Master of Science : Informatique, 09/2025 - En cours</h3>
-                <p>Epitech - Marseille</p>
+                <a
+                    href="https://www.epitech.eu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="projectButton"
+                > Epitech - Marseille</a>
                 <p>Master d'informatique me permettant d'acquérir plusieurs compétences
                 essentielles pour le développement informatique et/ou la gestion de projet,
                 tel que : Apprentissage de la méthode projets; Développement web / mobile / logiciel; Professionnalisation, Softkills</p>
@@ -14,7 +21,12 @@ function Formations () {
 
             <div className="texte1">
                 <h3>Classe Préparatoire aux Grandes Ecoles : ECT, 09/2019 - 08/2021</h3>
-                <p>Lycée Le Rebours - Paris - Assez Bien</p>
+                                <a
+                    href="https://www.lerebours.fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="projectButton"
+                >Lycée Le Rebours - Paris - Assez Bien</a>
                 <p>Prépa aux grandes écoles de commerce, cette formation m'a permis de
                 développer de nombreuses compétences cruciales pour un succès dans 
                 le monde du commerce, tel que : capacité à dégager un bilan claire et simple d'un situation donné, recherche des options

@@ -4,6 +4,8 @@ import html from '../images/html.JPG';
 import js from '../images/JS.JPG';
 import react from '../images/React.JPG';
 import docker from '../images/docker.JPG';
+import node from '../images/node.JPG';
+import pg from '../images/PG.JPG';
 
 function Skills() {
   return (
@@ -36,6 +38,14 @@ function Skills() {
           <p>Docker</p>
           <img className="logo" src={docker}/>
         </div>
+        <div className="Skills">
+          <p>Node.JS</p>
+          <img className="logo" src={node}/>
+        </div>
+        <div className="Skills">
+          <p>PostgresSQL / PGAdmin4</p>
+          <img className="logo" src={pg}/>
+        </div>
       </div>
       <div className='titreSections'>
         <h1>Soft Skills</h1>
@@ -55,6 +65,9 @@ function Skills() {
         </div>
         <div className="Skills">
           <p>Vente</p>
+        </div>
+        <div className="Skills">
+          <p>Anglais B2</p>
         </div>
       </div>
     <div className='fade'/>

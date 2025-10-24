@@ -4,17 +4,17 @@ function Home_page() {
   return (
     <div>
       <div className="bloc">
+        <video autoPlay muted loop>
+          <source src="/KokorokoClip.mp4" type="video/mp4" />
+        </video>
         <div className="titre">
           <h1>
             Augustin Viemont<br/><br/>
-            Curriculum Vitae
+            Portfollio
           </h1>
 
           <div className="photo">
             <img className="image" src={photocv} alt="Photo CV"/> 
-            <div className="middle">
-              <input className="button" type="button" value="B2O ??"/>
-            </div>
           </div>
         </div>
       </div>
