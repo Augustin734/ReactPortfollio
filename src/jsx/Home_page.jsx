@@ -5,7 +5,7 @@ function Home_page() {
     <div>
       <div className="bloc">
         <video autoPlay muted loop>
-          <source src="/KokorokoClip.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}KokorokoClip.mp4`} type="video/mp4" />
         </video>
         <div className="titre">
           <h1>
