@@ -35,12 +35,14 @@ function Home_page() {
       </div>
 
       <h1>Cliquez sur un vinyl pour en savoir plus !</h1>
-      <div className="RecordSection">
-        <Record RecordName="Formations" onClickPath="/formations" />
-        <Record RecordName="Projects" onClickPath="/projects" />
-        <Record RecordName="Experiences" onClickPath="/experiences" />
-        <Record RecordName="Skills" onClickPath="/skills" />
-        <Record RecordName="Interest" onClickPath="/interest" /> 
+      <div className='content'>
+        <div className="RecordSection">
+          <Record RecordName="Formations" onClickPath="/formations" />
+          <Record RecordName="Projects" onClickPath="/projects" />
+          <Record RecordName="Experiences" onClickPath="/experiences" />
+          <Record RecordName="Skills" onClickPath="/skills" />
+          <Record RecordName="Interest" onClickPath="/interest" /> 
+        </div>
       </div>
       <Footer></Footer>
     </div>

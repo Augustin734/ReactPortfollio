@@ -16,7 +16,7 @@ function Experiences() {
         <h1>Expérience</h1>
       </div>
       
-      <div>
+      <div className="content">
         <div className="texte1">
           <h3>Vendeur</h3>
           <p>Lego - Marseille - CDI - 09/2024 - 09/2025</p>

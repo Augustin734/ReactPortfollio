@@ -16,42 +16,43 @@ function Skills() {
       <Record RecordName="Experiences" onClickPath="/experiences" />
       <Record RecordName="Interest" onClickPath="/interest" /> 
     </div>
-
-    <div className='titrePage'>
-      <h1>Skills</h1>
-    </div>
-    
-    <h1>Hard Skills :</h1>
-    <div className="HardSkills">
-      <div className="Skills">
-        <p>Python</p>
-        <img className="logo" src={python}/>
+      <div className='titrePage'>
+        <h1>Hard Skills :</h1>
       </div>
-      <div className="Skills">
-        <p>CSS</p>
-        <img className="logo" src={css}/>
+      <div className="HardSkills">
+        <div className="Skills">
+          <p>Python</p>
+          <img className="logo" src={python}/>
+        </div>
+        <div className="Skills">
+          <p>CSS</p>
+          <img className="logo" src={css}/>
+        </div>
+        <div className="Skills">
+          <p>HTML</p>
+          <img className="logo" src={html}/>
+        </div>
+        <div className="Skills">
+          <p>Java Script</p>
+          <img className="logo" src={js}/>
+        </div>
       </div>
-      <div className="Skills">
-        <p>HTML</p>
-        <img className="logo" src={html}/>
+      <div className='titrePage'>
+        <h1>Soft Skills :</h1>
       </div>
-      <div className="Skills">
-        <p>Java Script</p>
-        <img className="logo" src={js}/>
+      <div className="HardSkills">
+        <div className="Skills">
+          <p>Travail d'équipe</p>
+        </div>
+        <div className="Skills">
+          <p>Gestion de la pression</p>
+        </div>
+        <div className="Skills">
+          <p>Gestion du stress</p>
+        </div>
       </div>
-    </div>
-    <h1>Soft Skills :</h1>
-    <div className="HardSkills">
-      <div className="Skills">
-        <p>Travail d'équipe</p>
-      </div>
-      <div className="Skills">
-        <p>Gestion de la pression</p>
-      </div>
-      <div className="Skills">
-        <p>Gestion du stress</p>
-      </div>
-    </div>
+    <div className='content'/>
+    <div/>
     <Footer></Footer>
   </div>
   );
