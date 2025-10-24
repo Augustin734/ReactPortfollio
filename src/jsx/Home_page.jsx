@@ -1,7 +1,3 @@
-import React from 'react';
-import Record from './components/Record.jsx';
-import Footer from './components/Footer.jsx';
-import '../css/main.css';
 import photocv from '../images/photocv.JPG';
 
 function Home_page() {
@@ -22,8 +18,9 @@ function Home_page() {
           </div>
         </div>
       </div>
-
-      <h1>Profil</h1>
+      <div className="titreSections">
+        <h1>Profil</h1>
+      </div>
       <div className="texte">
         <p>
           Motivé, curieux et travailleur, je suis toujours à la recherche d'un
@@ -33,18 +30,9 @@ function Home_page() {
           acquises en cours et de les développer.
         </p>
       </div>
-
-      <h1>Cliquez sur un vinyl pour en savoir plus !</h1>
-      <div className='content'>
-        <div className="RecordSection">
-          <Record RecordName="Formations" onClickPath="/formations" />
-          <Record RecordName="Projects" onClickPath="/projects" />
-          <Record RecordName="Experiences" onClickPath="/experiences" />
-          <Record RecordName="Skills" onClickPath="/skills" />
-          <Record RecordName="Interest" onClickPath="/interest" /> 
-        </div>
+      <div className="titreSections">
+        <h1>Cliquez sur un vinyl pour en savoir plus !</h1>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

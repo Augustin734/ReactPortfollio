@@ -2,7 +2,6 @@ html, body, #root {
   height: 100%;
   width: 100%;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -32,11 +31,18 @@ body {
     }
 }
 
-/* Pour les titres des pages */
-.titrePage {
+/* Pour les titres des sections */
+.titreSections {
   color: #000;
   font-size: 200%;
   margin: 10% 5% 5% 5%;
+  padding: 30px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .titreSections {
+    font-size: 150%;
+  }
 }
 
 /* Pour la vidéo */
@@ -72,7 +78,6 @@ body {
   z-index: -1;
 }
 
-
 /*Pour la Photo interactive*/
 .photo {
   position: relative;
@@ -107,16 +112,7 @@ body {
   opacity: 1;
 }
 
-
-/*Pour les titres de contenu*/
-h1 {
-    padding: 30px;
-    text-align: center;
-    margin: 0px;
-}
-
-
-/*Pour les différentes sections*/
+/*Pour les sections*/
 .texte {
     display: flex;
     flex-direction: column;
@@ -203,28 +199,31 @@ form {
   margin: 50px;
   flex-wrap: wrap;
 }
-/* Content */
-.content {
+.RecordSection {
+  gap: 18px;
+  padding: 20px 4%;
+}
+@media (max-width: 768px) {
+  .RecordSection::after {
+    height: 120px;
+    bottom: -1px;
+  }
+}
+
+/* Fade */
+.fade {
   position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   margin: 50px 0 0 0;
-  flex-wrap: wrap;
   width: 100%;
   padding: 30px 2% 220px 2%; 
-  box-sizing: border-box;
-  flex-direction: column;
 }
-.content::after {
+.fade::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: -1px;
   height: 160px; 
-  pointer-events: none;
   z-index: 1; 
   background: linear-gradient(
     to bottom,
@@ -234,24 +233,6 @@ form {
     #1e293b 100%
   );
 }
-@media (max-width: 768px) {
-  .RecordSection::after {
-    height: 120px;
-    bottom: -1px;
-  }
-
-  .RecordSection {
-    gap: 18px;
-    padding: 20px 4%;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-}
-
 
 /* Pour les différents Record */
 .record {
@@ -290,13 +271,10 @@ form {
 .record:hover {
   transform: rotate(360deg);
 }
-.record.home-page::before {
-    background-color: grey;
-}
 .record.formations::before {
   background-color: #2563eb;
 }
-.record.projects::before {
+.record.projets::before {
   background-color: #10b981;
 }
 .record.experiences::before {
@@ -304,9 +282,6 @@ form {
 }
 .record.skills::before {
   background-color: #8b5cf6;
-}
-.record.interest::before {
-  background-color: #ef4444;
 }
 .record span {
   z-index: 3;
@@ -324,7 +299,7 @@ form {
   }
 }
 
-
+/*Skills*/
 .HardSkills {
     display: flex;
     text-align: center;
@@ -338,7 +313,6 @@ form {
     justify-content: space-around;
     animation: fadeInUp 0.8s ease forwards;
 }
-
 .Skills {
     text-align: center;
     align-content: center;
@@ -351,20 +325,19 @@ form {
     font-size: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
 .logo {
   max-width: 70px;
   max-height: 70px;
   text-align: center;
   align-content: center;
 }
-
 .SkillsLogo {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
 
+/* Bouton pour scroll */
 .scrollTopButton {
   position: fixed;
   bottom: 40px;
@@ -379,12 +352,10 @@ form {
   transition: all 0.3s ease;
   z-index: 1000;
 }
-
 .scrollTopButton:hover {
   background-color: #334155;
   transform: translateY(-5px);
 }
-
 @media (max-width: 768px) {
   .scrollTopButton {
     bottom: 20px;

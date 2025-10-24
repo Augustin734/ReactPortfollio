@@ -1,23 +1,15 @@
-import Footer from './components/Footer.jsx';
-import Record from './components/Record.jsx';
-
 import python from '../images/Python.JPG';
 import css from '../images/css.JPG';
 import html from '../images/html.JPG';
-import js from '../images/JS.JPG'
+import js from '../images/JS.JPG';
+import react from '../images/React.JPG';
+import docker from '../images/docker.JPG';
 
 function Skills() {
   return (
   <div>
-    <div className="RecordSection">
-      <Record RecordName="Home-Page" onClickPath="/" />
-      <Record RecordName="Formations" onClickPath="/formations" />
-      <Record RecordName="Projects" onClickPath="/projects" />
-      <Record RecordName="Experiences" onClickPath="/experiences" />
-      <Record RecordName="Interest" onClickPath="/interest" /> 
-    </div>
-      <div className='titrePage'>
-        <h1>Hard Skills :</h1>
+      <div className='titreSections'>
+        <h1>Hard Skills</h1>
       </div>
       <div className="HardSkills">
         <div className="Skills">
@@ -36,9 +28,17 @@ function Skills() {
           <p>Java Script</p>
           <img className="logo" src={js}/>
         </div>
+        <div className="Skills">
+          <p>React</p>
+          <img className="logo" src={react}/>
+        </div>
+        <div className="Skills">
+          <p>Docker</p>
+          <img className="logo" src={docker}/>
+        </div>
       </div>
-      <div className='titrePage'>
-        <h1>Soft Skills :</h1>
+      <div className='titreSections'>
+        <h1>Soft Skills</h1>
       </div>
       <div className="HardSkills">
         <div className="Skills">
@@ -51,9 +51,8 @@ function Skills() {
           <p>Gestion du stress</p>
         </div>
       </div>
-    <div className='content'/>
+    <div className='fade'/>
     <div/>
-    <Footer></Footer>
   </div>
   );
 }
