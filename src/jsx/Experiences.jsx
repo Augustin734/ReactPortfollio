@@ -14,7 +14,7 @@ function petitContainers() {
           <img className="logoLego" src={lego}/>
           <p>Lego - Marseille - CDI - 09/2024 - 09/2025</p>
           <p>Capacité à identifier et répondre aux besoins du client</p>
-          <p>Proposer une expérience client pérsonalisé/luxe tout au long des achats</p>
+          <p>Proposer une expérience client personnalisé/luxe tout au long des achats</p>
           
         </div>
         <div className="textePetitContainer">
