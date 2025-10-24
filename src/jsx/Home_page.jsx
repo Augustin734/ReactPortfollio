@@ -30,7 +30,7 @@ function Home_page() {
           acquises en cours et de les développer.
         </p>
       </div>
-      <div className="titreSections">
+      <div className="titrevinyl">
         <h1>Cliquez sur un vinyl pour en savoir plus !</h1>
       </div>
     </div>
