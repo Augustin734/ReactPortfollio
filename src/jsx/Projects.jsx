@@ -1,3 +1,5 @@
+import screenPython from '../images/screenPython.JPG'
+
 function Projects() {
   return (
     <div>
@@ -6,23 +8,28 @@ function Projects() {
       </div>
 
       <div>
-        <div className="texte1">
-          <h3>Jeu du Pendu</h3>
-          <p><strong>Langage utilisé :</strong> Python</p>
-          <p>
-            Dans le cadre d'un cours sur le langage Python, j'ai réalisé un petit jeu du pendu 
-            avec plusieurs fonctionnalités : un nombre d'essais limité, la gestion des différentes 
-            entrées utilisateur et un système de record basé sur le temps mis par le joueur.
-          </p>
-          <a
-            href="https://github.com/Augustin734/HangMan"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectButton"
-          >Voir sur GitHub</a>
+        <div className="grosContainer">
+          <div className="textContent">
+            <h3>Jeu du Pendu</h3>
+            <p><strong>Langage utilisé :</strong> Python</p>
+            <p>
+              Dans le cadre d'un cours sur le langage Python, j'ai réalisé un petit jeu du pendu 
+              avec plusieurs fonctionnalités : un nombre d'essais limité, la gestion des différentes 
+              entrées utilisateur et un système de record basé sur le temps mis par le joueur.
+            </p>
+            <a
+              href="https://github.com/Augustin734/HangMan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="projectButton"
+            >Voir sur GitHub</a>
+          </div>
+          <div className="screen">
+            <img src={screenPython}/>
+          </div>
         </div>
 
-        <div className="texte1">
+        <div className="grosContainer">
           <h3>Job Board</h3>
           <p><strong>Langages utilisés :</strong> Node.js, HTML, CSS, JavaScript</p>
           <p>
@@ -41,7 +48,7 @@ function Projects() {
           </a>
         </div>
 
-        <div className="texte1">
+        <div className="grosContainer">
           <h3>Portfolio</h3>
           <p><strong>Langages utilisés :</strong> React, HTML, CSS, JavaScript</p>
           <p>
