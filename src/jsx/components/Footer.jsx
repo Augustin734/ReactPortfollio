@@ -17,51 +17,33 @@ function Footer() {
 
         <p><strong>Adresse Postale :</strong></p>
         <p>Je vis actuellement au 29 Rue de Rome 13002</p>
-        <br/>
+      </div>
 
+      <div className="contact">
         <a
           href="https://www.linkedin.com/in/augustin-viemont-6a1628226/"
-          target="_blank"
-          rel="noopener noreferrer"
+          className="projectButton"
         >
           Voici mon LinkedIn pour plus de détails
         </a>
         <br/>
         <br/>
-
-        <a href="/CV.pdf" download="VIEMONT_Augustin_CV.pdf">
+        <a 
+          href="/CV.pdf" 
+          download="VIEMONT_Augustin_CV.pdf"
+          className="projectButton"
+        >
           Vous pouvez même télécharger mon CV !!
         </a>
-        <br />
-
+        <br/>
+        <br/>
+        <a 
+          href="mailto: augustin.viemont1@outlook.fr" 
+          class="projectButton"
+        >
+          Ou alors m'envoyer directement un mail !
+        </a>
       </div>
-
-      <form action="/ma-page-de-traitement" method="post">
-        <h1 style={{ fontSize: "150%" }}>Contactez-moi</h1>
-        <br />
-
-        <label htmlFor="name">Nom et prénom :</label>
-        <br />
-        <input type="text" id="name" name="user_name" />
-        <br />
-
-        <label htmlFor="mail">E-mail :</label>
-        <br />
-        <input type="email" id="mail" name="user_mail" />
-        <br />
-
-        <label htmlFor="subject">Sujet :</label>
-        <br />
-        <input type="text" id="subject" name="user_subject" />
-        <br />
-
-        <label htmlFor="msg">Message :</label>
-        <br />
-        <textarea id="msg" name="user_message"></textarea>
-        <br />
-
-        <button type="submit">Envoyer</button>
-      </form>
     </footer>
   );
 }

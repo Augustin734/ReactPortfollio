@@ -89,6 +89,7 @@ function Skills() {
           <img className="logoSK" src={anglais}/>
         </div>
       </div>
+      <div className="fade"></div>
   </div>
   );
 }

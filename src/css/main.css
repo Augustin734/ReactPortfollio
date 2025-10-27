@@ -93,7 +93,7 @@ body {
   z-index: -1;
 }
 
-/*Pour la Photo interactive*/
+/*Pour la Photo*/
 .photo {
   position: relative;
   margin: 20px;
@@ -104,14 +104,12 @@ body {
         width: 50%;
     }
 }
-
 .logoEcole {
   display: flex;
   width: 20%;
   text-align: center;
   align-content: center;
 }
-
 .logoLego {
   max-width: 70%;
 }
@@ -121,7 +119,6 @@ body {
 .logoGH{
   max-width: 40%;
 }
-
 .image {
   opacity: 1;
   width: 100%;
@@ -189,7 +186,6 @@ body {
 .texte1, .Skills {
   background: linear-gradient(145deg, #1e293b, #111827);
 }
-
 .textePetitContainer {
   display: block;
   text-align: center;
@@ -391,7 +387,7 @@ footer button:hover {
 .grosContainer {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* permet à l'image de prendre toute la hauteur */
+  align-items: stretch;
   margin: 50px 10%;
   background-color: #1e293b;
   color: antiquewhite;
@@ -399,7 +395,6 @@ footer button:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;  animation: fadeInUp 0.8s ease forwards;
 }
-
 .textContent {
   flex: 1;
   padding: 50px;
@@ -409,21 +404,18 @@ footer button:hover {
   text-align: left;
   font-size: 1.2rem;
 }
-
 .textContent h3 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
-
 .textContent p {
   line-height: 1.6;
 }
-
 .projectButton {
   display: inline-block;
   margin-top: 1.5rem;
-  color: #38bdf8;
-  border: 2px solid #38bdf8;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -431,44 +423,45 @@ footer button:hover {
   transition: all 0.3s ease;
   width: fit-content;
 }
-
 .projectButton:hover {
-  background-color: #38bdf8;
+  background-color: antiquewhite;
   color: #1e293b;
   transform: scale(1.05);
 }
 
-/* 🔹 Partie image */
+/* Pour les screens */
 .screen {
   flex: 1;
   position: relative;
   overflow: hidden;
-
 }
-
-.screen img {
+.screen .screenImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: left;
 }
-
-/* ✅ Responsive */
+.screen .screenpg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
 @media (max-width: 900px) {
   .grosContainer {
     flex-direction: column;
   }
-
   .textContent {
     text-align: center;
     padding: 30px;
   }
-
   .screen {
     height: 300px; /* hauteur fixe pour mobile */
   }
-
-  .screen img {
+  .screen .screenImage {
+    border-radius: 0 0 30px 30px;
+  }
+  .screen .screenpg {
     border-radius: 0 0 30px 30px;
   }
 }
